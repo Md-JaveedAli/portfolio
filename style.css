@@ -1,0 +1,69 @@
+
+.social-icons a {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.certificate-img {
+  width: 675px;       /* default width for laptop/desktop */
+  height: 450px;      /* default height */
+  object-fit: cover;  
+  margin: 0 auto;     
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tablet screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .certificate-img {
+    width: 500px;
+    height: 330px;
+  }
+}
+
+/* Mobile screens (up to 767px) */
+@media (max-width: 767px) {
+  .certificate-img {
+    width: 300px;
+    height: 200px;
+  }
+}
+.navbar-brand {
+  font-size: 1.6rem;          /* Bigger text */
+  font-weight: 700;           /* Bold */
+  letter-spacing: 1px;        /* Spacing between letters */
+  text-transform: uppercase;  /* All caps (optional) */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;               /* Subtle hover effect */
+  transform: scale(1.05);     /* Slight zoom */
+}
+
+.skill-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);   /* small lift */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; /* stronger shadow */
+}
+
+
+
